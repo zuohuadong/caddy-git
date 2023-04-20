@@ -28,6 +28,7 @@ Please see other plugins:
 
 The `caddy-git` allows updating a directory backed by a git repo.
 
+
 ## Getting Started
 
 Configuration examples:
@@ -36,6 +37,9 @@ Configuration examples:
 * [Repo with Webhooks](./assets/config/webhook/Caddyfile)
 * [Repo with post pull execution scripts](./assets/config/post_cmd_exec/Caddyfile)
 * [Routeless config](./assets/config/routeless/Caddyfile)
+```
+./xcaddy build     --with github.com/greenpau/caddy-git=github.com/zuohuadong/caddy-git@v1.0.8
+```
 
 For example, the following configuration sets up a definition for `authp.github.io`
 repo. The request to `authp.myfiosgateway.com/update/authp.github.io` trigger
